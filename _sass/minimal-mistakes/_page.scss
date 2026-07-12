@@ -34,10 +34,11 @@ body {
 }
 
 .highlight-box {
-  font-style: italic;
-  background-color: $primary-color;
+  font-weight: 600;
+  // background-color: $primary-color;
+  // color: $base00;
   padding: 10px;
-  font-size: 80% !important;
+  font-size: 100% !important;
   margin: 0 30px 0 30px !important;
 }
 
