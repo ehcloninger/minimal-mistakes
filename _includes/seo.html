@@ -80,6 +80,10 @@
   <meta property="twitter:card" content="{% if site.og_image contains "://" %}{{ site.og_image }}{% else %}{{ site.og_image | absolute_url }}{% endif %}">
 {% endif %}
 
+  {% if og_image_alt %}
+    <meta property="og:image:alt" content="{{ og_image_alt }}">
+  {% endif %}
+
 {% if site.twitter.username %}
   <meta name="twitter:site" content="@{{ site.twitter.username | replace: "@", "" }}">
   <meta name="twitter:title" content="{{ page_title }}">
