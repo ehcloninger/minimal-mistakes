@@ -19,7 +19,7 @@ layout: archive
 
 {% include paginator.html %}
 
-{% if site.author.bsky_user %}
+{% if site.author.bsky_user and site.social_feed %}
   <div>
     <h3 class="archive__subtitle">
       Bluesky Posts <a href="https://bsky.app/profile/{{ site.author.bsky_user }}" target="_blank"><i class="fab fa-fw fa-bluesky" aria-hidden="true"></i></a>
